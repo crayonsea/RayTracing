@@ -59,3 +59,28 @@ $$
 
 > any point P that satisfies this equation is on the sphere
 
+## 6. Antialiasing
+
+- Generating Pixels with Multiple Samples
+- 多次在目标点附近随机采样, 结果取均值获取最终结果
+
+## 7. Diffuse Materials
+
+- mix and match geometry and materials
+  - we can assign a material to multiple spheres, or vice versa
+- geometry and material are tightly bound
+  - useful for procedural objects where the geometry and material are linked
+
+原理:
+- Diffuse objects that don’t emit light merely take on the color of their surroundings, but they modulate that with their own intrinsic color. 
+- Really any algorithm that randomizes direction will produce surfaces that look matte.
+
+
+pick a random point in a unit radius sphere
+- a rejection method
+
+
+
+## summary
+
+ray tracing, 记录 ray 路径, 计算获取 ray 的颜色
